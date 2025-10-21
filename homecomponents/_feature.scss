@@ -50,18 +50,21 @@
           font-family: Inter;
           font-weight: 500;
           font-style: Medium;
-          font-size: 18px;
+          font-size: 16px;
           color: #a6a6a6;
           line-height: 30px;
           letter-spacing: 0%;
+          @include breakpoint(desktop1200){
+            font-size: size(18);
+          }
 
           // Subtitle styles
         }
 
         .features-cta {
           border: none;
-          width: size(162);
-          height: size(62);
+          width: size(152);
+          height: size(52);
           background: #54bd95;
           font-family: Inter;
           font-weight: 500;
@@ -73,24 +76,39 @@
           letter-spacing: 0%;
 
           border-radius: 70px;
+          @include breakpoint(desktop1200){
+             width: size(162);
+          height: size(62);
+          }
         }
       }
 
       &:last-child {
         // Features cards row
         
+        @include breakpoint (desktop1024){
+             gap: size(0);
+            }
+        
         @include breakpoint(desktop1200){
             margin-top: size(74);
         }
         .feature-card {
+
+          @include breakpoint (desktop1024){
+               
+            }
             @include breakpoint(desktop1200){
                 width: size(364);
                 padding: 0;
             }
           .feature-icon {
             max-width: size(320);
+            @include breakpoint (desktop1024){
+               width: size(300);
+            }
             @include breakpoint(desktop1200){
-                max-width:size(364);
+                width:size(364);
             }
             // Icon container
             img {
@@ -102,24 +120,28 @@
             font-family: Inter;
             font-weight: 600;
             font-style: Semi Bold;
-            font-size: 30px;
+            font-size: 25px;
             line-height: 30px;
             letter-spacing: 0%;
             @include breakpoint(desktop1200){
                 margin-top: size(30);
+                font-size: 30px;
             }
           }
 
           .feature-card-description {
             font-family: Inter;
             font-weight: 500;
+            
             font-style: Medium;
-            font-size: 18px;
+            font-size: 16px;
             color: #a6a6a6;
             line-height: 30px;
             letter-spacing: 0%;
+            
             @include breakpoint(desktop1200){
                 margin-top: size(20);
+                 font-size: 18px;
             }
           }
         }

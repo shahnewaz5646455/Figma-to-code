@@ -17,13 +17,18 @@
       font-family: Inter;
       font-weight: 700;
       font-style: Bold;
-      font-size: 40px;
+      font-size: 35px;
       line-height: 100%;
       letter-spacing: 0%;
       text-align: center;
+      @include breakpoint(desktop1200){
+        font-size: size(40);
+      }
     }
 
     .clients-logos {
+        margin-top: size(50) !important;
+       
       @include breakpoint(desktop1200) {
        
         

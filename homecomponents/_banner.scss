@@ -33,6 +33,7 @@
   }
 
   &__element {
+    padding: size(5);
     @include breakpoint(mobile480) {
       max-width: size(480);
       width: 100%;
@@ -114,7 +115,7 @@
 
   &__card {
     top: size(220);
-    right: size(-20);
+    right: size(-10);
     width: size(100);
     @include breakpoint(desktop1200) {
       width: size(146);
@@ -124,7 +125,7 @@
   }
 
   &__dolar {
-    left: size(-10);
+    left: size(-5);
     bottom: size(10);
     width: size(100);
     @include breakpoint(desktop1200) {
@@ -135,8 +136,8 @@
   }
 
   &__icon {
-    top: 0;
-    right: size(-20);
+    top: size(5);
+    right: size(-5);
     width: size(40);
     @include breakpoint(desktop1200) {
       top: size(26);
@@ -144,7 +145,7 @@
       width: size(60);
     }
     &--secondary {
-      bottom: size(-30);
+      bottom: size(-20);
       right: size(60);
       @include breakpoint(desktop1200) {
         bottom: size(0);
@@ -158,7 +159,7 @@
     border-radius: 10px;
     rotate: 15deg;
     top: size(100);
-    left: size(-10);
+    left: size(-5);
     background: #4535af;
     @include breakpoint(desktop1200) {
       left: size(-30);

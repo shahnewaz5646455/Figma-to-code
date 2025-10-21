@@ -2,7 +2,10 @@
 @use "../scss/partials/index" as *;
 @use "../scss/partials/index" as *;
 .benefits-section {
-  padding: size(130) 0;
+  padding: size(50) 0;
+  @include breakpoint(desktop1200){
+    padding: size(130) 0;
+  }
   .container {
     @include breakpoint(desktop1200) {
       max-width: size(1180);
@@ -23,9 +26,12 @@
             font-family: Inter;
             font-weight: 700;
             font-style: Bold;
-            font-size: 50px;
+            font-size: 40px;
             line-height: 100%;
             letter-spacing: 0%;
+            @include breakpoint(desktop1200){
+              font-size: size(50);
+            }
           }
 
           .benefits-list {
@@ -60,10 +66,13 @@
                 font-family: Inter;
                 font-weight: 500;
                 font-style: Medium;
-                font-size: 18px;
+                font-size: 14px;
                 color: #191a15;
                 line-height: 30px;
                 letter-spacing: 0%;
+                @include breakpoint(desktop1200){
+                  font-size: size(18);
+                }
 
                 // Text styles
               }
@@ -92,7 +101,7 @@
 
             .icon1 {
               top: size(36);
-              left: size(-30);
+              left: size(-20);
               width: size(170);
               @include breakpoint(desktop1200) {
                
@@ -104,7 +113,7 @@
               top: size(121);
               width: size(100);
 
-              right: size(-30);
+              right: size(-20);
               @include breakpoint(desktop1200) {
                
                 right: size(-69);
@@ -115,7 +124,7 @@
               bottom: size(-10);
               width: size(180);
 
-              left: size(-40);
+              left: size(-20);
               @include breakpoint(desktop1200) {
             
                 width: size(302);
@@ -125,7 +134,7 @@
             }
             .icon4 {
               top: size(150);
-              left: size(-25);
+              left: size(-15);
               width: size(40);
               @include breakpoint(desktop1200){
                 top: size(275);

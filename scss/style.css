@@ -48,6 +48,9 @@
     letter-spacing: 0%;
   }
 }
+.banner__element {
+  padding: 0.3125rem;
+}
 @media screen and (min-width: 30rem) {
   .banner__element {
     max-width: 30rem;
@@ -128,7 +131,7 @@
 }
 .banner__card {
   top: 13.75rem;
-  right: -1.25rem;
+  right: -0.625rem;
   width: 6.25rem;
 }
 @media screen and (min-width: 75rem) {
@@ -139,7 +142,7 @@
   }
 }
 .banner__dolar {
-  left: -0.625rem;
+  left: -0.3125rem;
   bottom: 0.625rem;
   width: 6.25rem;
 }
@@ -151,8 +154,8 @@
   }
 }
 .banner__icon {
-  top: 0;
-  right: -1.25rem;
+  top: 0.3125rem;
+  right: -0.3125rem;
   width: 2.5rem;
 }
 @media screen and (min-width: 75rem) {
@@ -163,7 +166,7 @@
   }
 }
 .banner__icon--secondary {
-  bottom: -1.875rem;
+  bottom: -1.25rem;
   right: 3.75rem;
 }
 @media screen and (min-width: 75rem) {
@@ -177,7 +180,7 @@
   border-radius: 10px;
   rotate: 15deg;
   top: 6.25rem;
-  left: -0.625rem;
+  left: -0.3125rem;
   background: #4535af;
 }
 @media screen and (min-width: 75rem) {
@@ -212,7 +215,7 @@
   font-family: Inter;
   font-weight: 600;
   font-style: Semi Bold;
-  font-size: 2.5rem;
+  font-size: 2.1875rem;
   line-height: 120%;
   letter-spacing: 0%;
 }
@@ -227,18 +230,28 @@
   font-family: Inter;
   font-weight: 500;
   font-style: Medium;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 30px;
   letter-spacing: 0%;
   color: #a6a6a6;
+}
+@media screen and (min-width: 75rem) {
+  .support-section .container .row .col-lg-6:first-child p {
+    font-size: 1rem;
+  }
 }
 .support-section .container .row .col-lg-6:first-child .rating-cards .rating-card h2 {
   font-family: Inter;
   font-weight: 700;
   font-style: Bold;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 100%;
   letter-spacing: 0%;
+}
+@media screen and (min-width: 75rem) {
+  .support-section .container .row .col-lg-6:first-child .rating-cards .rating-card h2 {
+    font-size: 1.125rem;
+  }
 }
 .support-section .container .row .col-lg-6:first-child .rating-cards .rating-card h2 span {
   font-style: normal;
@@ -248,10 +261,15 @@
   font-family: Inter;
   font-weight: 700;
   font-style: Bold;
-  font-size: 18px;
+  font-size: 16px;
   color: #a6a6a6;
   line-height: 100%;
   letter-spacing: 0%;
+}
+@media screen and (min-width: 75rem) {
+  .support-section .container .row .col-lg-6:first-child .rating-cards .rating-card h4 {
+    font-size: 1.125rem;
+  }
 }
 @media screen and (min-width: 75rem) {
   .support-section .container .row .col-lg-6:last-child {
@@ -259,30 +277,50 @@
     padding: 0;
   }
 }
+.support-section .container .row .col-lg-6:last-child .feature-item {
+  gap: 1.25rem !important;
+}
 .support-section .container .row .col-lg-6:last-child .feature-item .feature-icon {
   box-shadow: 0px 4px 9px 0px rgba(0, 0, 0, 0.3);
-  width: 3.75rem;
-  height: 3.75rem;
+  width: 2.8125rem;
+  height: 2.8125rem;
+  padding: 0.625rem;
+}
+@media screen and (min-width: 75rem) {
+  .support-section .container .row .col-lg-6:last-child .feature-item .feature-icon {
+    width: 3.75rem;
+    height: 3.75rem;
+  }
 }
 .support-section .container .row .col-lg-6:last-child .feature-item .feature-icon img {
-  width: 1.875rem;
+  width: 2.1875rem;
 }
 .support-section .container .row .col-lg-6:last-child .feature-item .feature-content h2 {
   font-family: Inter;
   font-weight: 700;
   font-style: Bold;
-  font-size: 28px;
+  font-size: 24px;
   line-height: 100%;
   letter-spacing: 0%;
+}
+@media screen and (min-width: 75rem) {
+  .support-section .container .row .col-lg-6:last-child .feature-item .feature-content h2 {
+    font-size: 1.75rem;
+  }
 }
 .support-section .container .row .col-lg-6:last-child .feature-item .feature-content p {
   font-family: Inter;
   font-weight: 500;
   font-style: Medium;
-  font-size: 18px;
+  font-size: 16px;
   color: #a6a6a6;
   line-height: 30px;
   letter-spacing: 0%;
+}
+@media screen and (min-width: 75rem) {
+  .support-section .container .row .col-lg-6:last-child .feature-item .feature-content p {
+    font-size: 1.125rem;
+  }
 }
 
 .clients-section {
@@ -299,10 +337,18 @@
   font-family: Inter;
   font-weight: 700;
   font-style: Bold;
-  font-size: 40px;
+  font-size: 35px;
   line-height: 100%;
   letter-spacing: 0%;
   text-align: center;
+}
+@media screen and (min-width: 75rem) {
+  .clients-section .container .clients-title {
+    font-size: 2.5rem;
+  }
+}
+.clients-section .container .clients-logos {
+  margin-top: 3.125rem !important;
 }
 @media screen and (min-width: 75rem) {
   .clients-section .container .clients-logos {
@@ -310,7 +356,12 @@
   }
 }
 .benefits-section {
-  padding: 8.125rem 0;
+  padding: 3.125rem 0;
+}
+@media screen and (min-width: 75rem) {
+  .benefits-section {
+    padding: 8.125rem 0;
+  }
 }
 @media screen and (min-width: 75rem) {
   .benefits-section .container {
@@ -327,9 +378,14 @@
   font-family: Inter;
   font-weight: 700;
   font-style: Bold;
-  font-size: 50px;
+  font-size: 40px;
   line-height: 100%;
   letter-spacing: 0%;
+}
+@media screen and (min-width: 75rem) {
+  .benefits-section .container .row .col-12:first-child .benefits-title {
+    font-size: 3.125rem;
+  }
 }
 .benefits-section .container .row .col-12:first-child .benefits-list {
   list-style: none;
@@ -364,10 +420,15 @@
   font-family: Inter;
   font-weight: 500;
   font-style: Medium;
-  font-size: 18px;
+  font-size: 14px;
   color: #191a15;
   line-height: 30px;
   letter-spacing: 0%;
+}
+@media screen and (min-width: 75rem) {
+  .benefits-section .container .row .col-12:first-child .benefits-list .benefit-item .benefit-text {
+    font-size: 1.125rem;
+  }
 }
 .benefits-section .container .row .col-12:last-child {
   padding: 0;
@@ -389,7 +450,7 @@
 }
 .benefits-section .container .row .col-12:last-child .benefits-visual .icon1 {
   top: 2.25rem;
-  left: -1.875rem;
+  left: -1.25rem;
   width: 10.625rem;
 }
 @media screen and (min-width: 75rem) {
@@ -401,7 +462,7 @@
 .benefits-section .container .row .col-12:last-child .benefits-visual .icon2 {
   top: 7.5625rem;
   width: 6.25rem;
-  right: -1.875rem;
+  right: -1.25rem;
 }
 @media screen and (min-width: 75rem) {
   .benefits-section .container .row .col-12:last-child .benefits-visual .icon2 {
@@ -412,7 +473,7 @@
 .benefits-section .container .row .col-12:last-child .benefits-visual .icon3 {
   bottom: -0.625rem;
   width: 11.25rem;
-  left: -2.5rem;
+  left: -1.25rem;
 }
 @media screen and (min-width: 75rem) {
   .benefits-section .container .row .col-12:last-child .benefits-visual .icon3 {
@@ -423,7 +484,7 @@
 }
 .benefits-section .container .row .col-12:last-child .benefits-visual .icon4 {
   top: 9.375rem;
-  left: -1.5625rem;
+  left: -0.9375rem;
   width: 2.5rem;
 }
 @media screen and (min-width: 75rem) {
@@ -656,15 +717,20 @@
   font-family: Inter;
   font-weight: 500;
   font-style: Medium;
-  font-size: 18px;
+  font-size: 16px;
   color: #a6a6a6;
   line-height: 30px;
   letter-spacing: 0%;
 }
+@media screen and (min-width: 75rem) {
+  .features-section .container .row:first-child .features-subtitle {
+    font-size: 1.125rem;
+  }
+}
 .features-section .container .row:first-child .features-cta {
   border: none;
-  width: 10.125rem;
-  height: 3.875rem;
+  width: 9.5rem;
+  height: 3.25rem;
   background: #54bd95;
   font-family: Inter;
   font-weight: 500;
@@ -674,6 +740,17 @@
   line-height: 30px;
   letter-spacing: 0%;
   border-radius: 70px;
+}
+@media screen and (min-width: 75rem) {
+  .features-section .container .row:first-child .features-cta {
+    width: 10.125rem;
+    height: 3.875rem;
+  }
+}
+@media screen and (min-width: 64rem) {
+  .features-section .container .row:last-child {
+    gap: 0rem;
+  }
 }
 @media screen and (min-width: 75rem) {
   .features-section .container .row:last-child {
@@ -689,9 +766,14 @@
 .features-section .container .row:last-child .feature-card .feature-icon {
   max-width: 20rem;
 }
+@media screen and (min-width: 64rem) {
+  .features-section .container .row:last-child .feature-card .feature-icon {
+    width: 18.75rem;
+  }
+}
 @media screen and (min-width: 75rem) {
   .features-section .container .row:last-child .feature-card .feature-icon {
-    max-width: 22.75rem;
+    width: 22.75rem;
   }
 }
 .features-section .container .row:last-child .feature-card .feature-icon img {
@@ -701,20 +783,21 @@
   font-family: Inter;
   font-weight: 600;
   font-style: Semi Bold;
-  font-size: 30px;
+  font-size: 25px;
   line-height: 30px;
   letter-spacing: 0%;
 }
 @media screen and (min-width: 75rem) {
   .features-section .container .row:last-child .feature-card .feature-card-title {
     margin-top: 1.875rem;
+    font-size: 30px;
   }
 }
 .features-section .container .row:last-child .feature-card .feature-card-description {
   font-family: Inter;
   font-weight: 500;
   font-style: Medium;
-  font-size: 18px;
+  font-size: 16px;
   color: #a6a6a6;
   line-height: 30px;
   letter-spacing: 0%;
@@ -722,6 +805,7 @@
 @media screen and (min-width: 75rem) {
   .features-section .container .row:last-child .feature-card .feature-card-description {
     margin-top: 1.25rem;
+    font-size: 18px;
   }
 }
 
