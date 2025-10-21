@@ -1,0 +1,189 @@
+@use "../scss/global/index" as *;
+@use "../scss/partials/index" as *;
+@use "../scss/partials/index" as *;
+
+.header {
+  width: 100%;
+  padding-top: size(40);
+  @include breakpoint(mobile360) {
+    padding-top: size(20);
+  }
+  @include breakpoint(mobile500) {
+    padding: size(20) size(8);
+  }
+  @include breakpoint(desktop1024) {
+    padding-top: size(40);
+  }
+}
+
+.nav {
+  // Main nav container
+  margin: 0 auto;
+  
+  @include breakpoint(mobile360) {
+    max-width: size(350);
+    width: 100%;
+    @include flex-row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @include breakpoint(mobile414) {
+    max-width: size(450);
+  }
+  @include breakpoint(mobile500) {
+    max-width: 100%;
+  }
+  @include breakpoint(desktop1024) {
+    max-width: size(1180);
+    width: 100%;
+    
+  }
+
+  &__logo {
+    // Logo link styles
+    text-decoration: none;
+    width: size(160);
+    height: size(30);
+   
+
+    &-text {
+      font-family: Inter;
+      font-weight: 600;
+      
+      font-style: Semi Bold;
+      font-size: 50px;
+      line-height: 30px;
+      letter-spacing: 0%;
+      color: #54bd95;
+      @include breakpoint(mobile360) {
+        font-size: size(40);
+      }
+      @include breakpoint(desktop1024){
+        font-size: size(50);
+        margin: 0;
+      }
+    }
+  }
+
+  &__container {
+    display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    // Container for menu, actions, and toggle
+    @include breakpoint(mobile768) {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      min-width: size(600);
+    }
+    @include breakpoint(desktop1024){
+       max-width: size(681);
+       width: 100%;
+       
+    }
+  }
+
+  &__menu {
+    list-style: none;
+
+    @include breakpoint(mobile360) {
+      display: none;
+    }
+    @include breakpoint(mobile768) {
+      @include flex-row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0;
+      margin: 0;
+
+      width: size(390);
+    }
+    .link_main{
+        font-size: size(18);
+        color: #000000;
+    }
+
+    // Mobile menu state
+    &--open {
+      // Open state for mobile
+    }
+  }
+
+  &__item {
+  }
+
+  &__link {
+    font-family: Inter;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #a6a6a6;
+
+    text-decoration: none;
+    &:hover,
+    &:focus,
+    &--active {
+      color: blueviolet;
+    }
+  }
+
+  &__actions {
+    @include flex-row;
+    gap: size(20);
+  }
+
+  &__button {
+    font-family: Inter;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    @include breakpoint(mobile360) {
+      display: none;
+    }
+    @include breakpoint(mobile768) {
+      display: inline-block;
+    }
+
+    &--login {
+      color: #a6a6a6;
+      background: transparent;
+      border: none;
+    }
+
+    &--signup {
+      background: #54bd95;
+      color: white;
+      width: size(80);
+      height: size(40);
+      border-radius: size(10);
+      border: none;
+    }
+  }
+
+  &__mobile-toggle {
+    @include breakpoint(mobile768) {
+      display: none;
+    }
+  }
+
+  &__hamburger {
+    // Hamburger icon styles
+
+    width: size(40);
+    @include breakpoint(mobile768) {
+      display: none;
+    }
+  }
+
+  // Responsive modifiers
+  &--mobile-open {
+    // Mobile open state
+  }
+}

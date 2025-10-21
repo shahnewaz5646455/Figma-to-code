@@ -1,0 +1,41 @@
+@use "../scss/global/index" as *;
+@use "../scss/partials/index" as *;
+@use "../scss/partials/index" as *;
+// Clients/Teams Section
+.clients-section {
+  padding-top: size(65);
+  padding-bottom: size(130);
+  @include breakpoint(desktop1200) {
+    max-width: size(1100);
+    margin: 0 auto;
+  }
+  .container {
+    // Main container
+
+    .clients-title {
+      // Main heading
+      font-family: Inter;
+      font-weight: 700;
+      font-style: Bold;
+      font-size: 40px;
+      line-height: 100%;
+      letter-spacing: 0%;
+      text-align: center;
+    }
+
+    .clients-logos {
+      @include breakpoint(desktop1200) {
+       
+        
+        gap: size(50) !important;
+      }
+      // Logos container
+      .client-logo {
+        // Individual logo
+        img {
+          // Logo image
+        }
+      }
+    }
+  }
+}

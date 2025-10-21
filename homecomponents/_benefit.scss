@@ -1,0 +1,140 @@
+@use "../scss/global/index" as *;
+@use "../scss/partials/index" as *;
+@use "../scss/partials/index" as *;
+.benefits-section {
+  padding: size(130) 0;
+  .container {
+    @include breakpoint(desktop1200) {
+      max-width: size(1180);
+    
+    }
+    .row {
+      .col-12 {
+        &:first-child {
+          // Benefits content column
+
+          @include breakpoint(desktop1200) {
+           
+            width: size(430);
+            padding: 0;
+          }
+          .benefits-title {
+            // Title styles
+            font-family: Inter;
+            font-weight: 700;
+            font-style: Bold;
+            font-size: 50px;
+            line-height: 100%;
+            letter-spacing: 0%;
+          }
+
+          .benefits-list {
+            @include breakpoint(desktop1200){
+              margin-top: size(50) !important;
+              display: flex !important;
+              flex-direction: column;
+
+              gap: size(30) !important;
+            }
+            list-style: none;
+            @include breakpoint(desktop1200) {
+              padding: 0;
+              margin: 0;
+            }
+            .benefit-item {
+              // Individual benefit item
+              @include breakpoint(desktop1200) {
+             
+                display: flex;
+                gap: size(5);
+              }
+              .benefit-icon {
+                // Icon styles
+                @include breakpoint(desktop1200) {
+                  width: size(32);
+                  height: size(32);
+                }
+              }
+
+              .benefit-text {
+                font-family: Inter;
+                font-weight: 500;
+                font-style: Medium;
+                font-size: 18px;
+                color: #191a15;
+                line-height: 30px;
+                letter-spacing: 0%;
+
+                // Text styles
+              }
+            }
+          }
+        }
+
+        &:last-child {
+          // Images column
+          padding: 0;
+          max-width: size(452);
+          .benefits-visual {
+            // Visual container
+            max-width: size(320);
+            @include breakpoint(desktop1200) {
+              max-width: size(450);
+            }
+            .main-image {
+              width: 100%;
+            }
+
+            .floating-element {
+              // Floating images styles
+              position: absolute;
+            }
+
+            .icon1 {
+              top: size(36);
+              left: size(-30);
+              width: size(170);
+              @include breakpoint(desktop1200) {
+               
+                width: size(304);
+                left: size(-124);
+              }
+            }
+            .icon2 {
+              top: size(121);
+              width: size(100);
+
+              right: size(-30);
+              @include breakpoint(desktop1200) {
+               
+                right: size(-69);
+                width: size(138);
+              }
+            }
+            .icon3 {
+              bottom: size(-10);
+              width: size(180);
+
+              left: size(-40);
+              @include breakpoint(desktop1200) {
+            
+                width: size(302);
+                bottom: size(-34);
+                left: size(-106);
+              }
+            }
+            .icon4 {
+              top: size(150);
+              left: size(-25);
+              width: size(40);
+              @include breakpoint(desktop1200){
+                top: size(275);
+                left: size(-45);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,397 @@
+@use "../scss/global/index" as *;
+@use "../scss/partials/index" as *;
+@use "../scss/partials/index" as *;
+
+// Footer Section
+.footer {
+  background: #161c28;
+  padding-top: size(130);
+  .footer__container {
+    @include breakpoint(desktop1200) {
+      max-width: size(1180);
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    // Main container
+
+    // First column wrapper
+    &:first-child {
+      .footer__testimonial {
+        @include breakpoint(desktop1200) {
+          width: size(466);
+        }
+        // Testimonial section
+        .footer__testimonial-title {
+          font-family: Inter;
+
+          font-weight: 600;
+          font-style: Semi Bold;
+          font-size: 50px;
+          color: white;
+          line-height: 100%;
+          letter-spacing: 0%;
+
+          // Title
+        }
+
+        .footer__testimonial-description {
+          font-family: Inter;
+          font-weight: 500;
+          font-style: Medium;
+          font-size: 18px;
+          color: #a6a6a6;
+          line-height: 30px;
+          letter-spacing: 0%;
+
+          // Description
+        }
+
+        .footer__testimonial-image {
+          // Image container
+          img {
+            // Image styles
+          }
+        }
+
+        .footer__testimonial-quote {
+          font-family: Inter;
+          font-weight: 500;
+          font-style: Medium;
+          font-size: 18px;
+          color: #a6a6a6;
+          line-height: 30px;
+          letter-spacing: 0%;
+
+          // Quote text
+        }
+
+        .footer__testimonial-author {
+          font-family: Inter;
+          font-weight: 500;
+          font-style: Medium;
+          font-size: 18px;
+          color: #a6a6a6;
+          line-height: 30px;
+          letter-spacing: 0%;
+
+          // Author name
+        }
+
+        .footer__testimonial-icons {
+          // Rating icons container
+          img {
+            // Individual icon
+          }
+        }
+      }
+
+      .footer__subscription {
+        // Subscription section
+        @include breakpoint(desktop1200) {
+          margin-top: size(130);
+        }
+        .footer__subscription-title {
+          color: #54bd95;
+          font-family: Inter;
+          font-weight: 600;
+          font-style: Semi Bold;
+          font-size: 50px;
+          line-height: 30px;
+          letter-spacing: 0%;
+
+          // Brand title
+        }
+
+        .footer__subscription-description {
+          // Description
+          font-family: Inter;
+          font-weight: 500;
+          font-style: Medium;
+          font-size: 18px;
+          color: #a6a6a6;
+          line-height: 30px;
+          letter-spacing: 0%;
+          @include breakpoint(desktop1200){
+            margin-top: size(30);
+          }
+        }
+
+        .footer__subscription-form {
+          position: relative;
+          @include breakpoint(desktop1200){
+            margin-top: size(30);
+          }
+          // Form container
+          input {
+            border-radius: size(70);
+            width: size(280);
+            border: 2px solid #a6a6a6;
+            padding: size(10) size(10);
+            background: transparent;
+            @include breakpoint(desktop1200){
+              width: size(410);
+              height: size(60);
+            }
+            &::placeholder {
+              font-family: Inter;
+              font-weight: 500;
+              font-style: Medium;
+              font-size: 16px;
+              line-height: 30px;
+              letter-spacing: 0%;
+              color: #a6a6a6;
+            }
+            // Input field
+          }
+
+          div {
+            width: size(36);
+            height: size(36);
+            position: absolute;
+            top: size(5);
+            left: size(239);
+            background: #54bd95;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @include breakpoint(desktop1200){
+              width: size(46);
+            height: size(46);
+            top: size(7);
+            left: size(357);
+
+
+            }
+
+            // Submit button container
+            img {
+              // Arrow icon
+            }
+          }
+        }
+      }
+
+      .footer__copyright {
+        display: none;
+        @include breakpoint(desktop1200) {
+          display: block;
+        }
+        // Copyright section
+        p {
+          font-family: Inter;
+          font-weight: 500;
+          font-style: Medium;
+          font-size: 18px;
+          color: white;
+          line-height: 30px;
+          letter-spacing: 0%;
+          margin-top: size(79);
+
+          // Copyright text
+        }
+      }
+    }
+
+    // Second column wrapper
+    &:last-child {
+      .footer__form {
+        border-radius: size(20);
+        background: #222938;
+        // Contact form section
+        .footer__form-container {
+          padding: size(20);
+          // Form wrapper
+          @include breakpoint(desktop1200) {
+            width: size(612);
+          }
+          .footer__form-header {
+            text-align: center;
+            // Form header
+            img {
+              // Header icon
+            }
+
+            h2 {
+              font-family: Inter;
+              font-weight: 500;
+              font-style: Medium;
+              font-size: 30px;
+              margin-top: size(10);
+              color: white;
+              text-align: center;
+              line-height: 100%;
+              letter-spacing: 0%;
+
+              // Form title
+            }
+          }
+
+          .footer__form-email {
+            display: flex;
+            flex-direction: column;
+            gap: size(20);
+            // Email field container
+            label {
+              color: #ffffff;
+              font-family: Inter;
+              font-weight: 500;
+              font-style: Medium;
+              font-size: 18px;
+              line-height: 100%;
+              letter-spacing: 0%;
+
+              // Label
+            }
+
+            input {
+              width: size(280);
+              padding: size(5) size(10);
+              border: none;
+              border-radius: size(10);
+              @include breakpoint(desktop1200) {
+                width: size(440);
+                height: size(50);
+              }
+              // Email input
+              &::placeholder {
+                color: #a6a6a6;
+                font-family: Inter;
+                font-weight: 500;
+                font-style: Medium;
+                font-size: 14px;
+                line-height: 100%;
+                letter-spacing: 0%;
+              }
+            }
+          }
+
+          .footer__form-message {
+            display: flex;
+            flex-direction: column;
+            gap: size(20);
+            // Message field container
+            label {
+              color: #ffffff;
+              font-family: Inter;
+              font-weight: 500;
+              font-style: Medium;
+              font-size: 18px;
+              line-height: 100%;
+              letter-spacing: 0%;
+            }
+
+            input {
+              width: size(280);
+              padding: size(5) size(10);
+              border: none;
+              border-radius: size(10);
+              height: size(80);
+              @include breakpoint(desktop1200) {
+                width: size(440);
+              }
+              &::placeholder {
+                font-family: Inter;
+                font-weight: 500;
+                font-style: Medium;
+                font-size: 14px;
+                color: #a6a6a6;
+                line-height: 100%;
+                letter-spacing: 0%;
+                @include breakpoint(desktop1200) {
+                }
+              }
+              // Message input
+            }
+          }
+
+          .footer__form-actions {
+            display: flex;
+            flex-direction: column;
+            gap: size(5);
+
+            // Form actions
+            button {
+              width: size(280);
+              border-radius: size(10);
+              background: #54bd95;
+              border: none;
+              color: white;
+              height: size(60);
+              font-family: Inter;
+              font-weight: 600;
+              font-style: Semi Bold;
+              font-size: 16px;
+              line-height: 100%;
+              letter-spacing: 0%;
+              @include breakpoint(desktop1200) {
+                width: size(440);
+                height: size(60);
+              }
+
+              // Demo button
+            }
+
+            p {
+              font-family: Inter;
+              font-weight: 500;
+              font-style: Medium;
+              font-size: 14px;
+              align-self: flex-end;
+              color: white;
+              line-height: 100%;
+              letter-spacing: 0%;
+
+              // Trial text
+            }
+          }
+        }
+      }
+
+      .footer__support {
+       
+        @include breakpoint(desktop1200) {
+          margin-top: size(170);
+        }
+
+        .footer__support-column {
+          margin-top: size(30) !important;
+          h2 {
+            font-family: Inter;
+            margin-top: size(20) !important;
+            font-weight: 500;
+            font-style: Medium;
+            font-size: 18px;
+            color: white;
+            line-height: 100%;
+            letter-spacing: 0%;
+          }
+
+          ul {
+            // Links list
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+
+            gap: size(20);
+            margin: 0;
+            li {
+              font-family: Inter;
+              font-weight: 500;
+              font-style: Medium;
+              font-size: 18px;
+              color: #a6a6a6;
+              line-height: 100%;
+              letter-spacing: 0%;
+
+              // Individual link
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,129 @@
+@use "../scss/global/index" as *;
+@use "../scss/partials/index" as *;
+@use "../scss/partials/index" as *;
+
+// Features Section
+.features-section {
+
+    padding: size(130) size(0);
+  .container {
+    @include breakpoint(desktop1200) {
+     
+      max-width: size(1180);
+      
+    }
+    .row {
+      .button-container {
+        @include breakpoint(desktop1200) {
+          width: size(220);
+          padding: 0;
+        }
+      }
+
+      .title-custom {
+        @include breakpoint(desktop1200) {
+          width: size(331);
+          padding: 0;
+        }
+      }
+      .subtitle {
+        @include breakpoint(desktop1200) {
+          width: size(461);
+          padding: 0;
+        }
+      }
+      &:first-child {
+        // Header row
+        .features-title {
+          font-family: Inter;
+          font-weight: 600;
+          font-style: Semi Bold;
+          font-size: size(40);
+          line-height: 120%;
+          letter-spacing: 0%;
+          @include breakpoint(desktop1200) {
+            font-size: size(50);
+          }
+        }
+
+        .features-subtitle {
+          font-family: Inter;
+          font-weight: 500;
+          font-style: Medium;
+          font-size: 18px;
+          color: #a6a6a6;
+          line-height: 30px;
+          letter-spacing: 0%;
+
+          // Subtitle styles
+        }
+
+        .features-cta {
+          border: none;
+          width: size(162);
+          height: size(62);
+          background: #54bd95;
+          font-family: Inter;
+          font-weight: 500;
+          font-style: Medium;
+          font-size: 18px;
+          color: white;
+          line-height: 30px;
+
+          letter-spacing: 0%;
+
+          border-radius: 70px;
+        }
+      }
+
+      &:last-child {
+        // Features cards row
+        
+        @include breakpoint(desktop1200){
+            margin-top: size(74);
+        }
+        .feature-card {
+            @include breakpoint(desktop1200){
+                width: size(364);
+                padding: 0;
+            }
+          .feature-icon {
+            max-width: size(320);
+            @include breakpoint(desktop1200){
+                max-width:size(364);
+            }
+            // Icon container
+            img {
+              width: 100%;
+            }
+          }
+
+          .feature-card-title {
+            font-family: Inter;
+            font-weight: 600;
+            font-style: Semi Bold;
+            font-size: 30px;
+            line-height: 30px;
+            letter-spacing: 0%;
+            @include breakpoint(desktop1200){
+                margin-top: size(30);
+            }
+          }
+
+          .feature-card-description {
+            font-family: Inter;
+            font-weight: 500;
+            font-style: Medium;
+            font-size: 18px;
+            color: #a6a6a6;
+            line-height: 30px;
+            letter-spacing: 0%;
+            @include breakpoint(desktop1200){
+                margin-top: size(20);
+            }
+          }
+        }
+      }
+    }
+  }
+}

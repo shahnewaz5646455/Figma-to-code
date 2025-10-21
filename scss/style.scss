@@ -4,12 +4,23 @@
 	- Version: 1.0
 	- Website: https://qtecsolution.com/
 ================================= */
-@import "./navbar";
-@forward "./reset";
-@forward "./components";
-@forward "./custom";
-@forward "./pages";
-@forward "./utilities";
-@forward "./animations";
 
-
+// @forward "./reset";
+// @forward "./components";
+// @forward "./custom";
+// @forward "./pages";
+// @forward "./utilities";
+// @forward "./animations";
+@import "../homecomponents/banner";
+@import "../homecomponents/support";
+@import "../homecomponents/small";
+@import "../homecomponents/benefit";
+@import "../homecomponents/navbar";
+@import "../homecomponents/feature";
+@import "../homecomponents/footer";
+@import "../homecomponents/plan";
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}

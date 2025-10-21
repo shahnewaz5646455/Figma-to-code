@@ -1,102 +1,775 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>One-Ecommerce</title>
+    <!-- FAVICON-ICON -->
+    <link
+      rel="shortcut icon"
+      href="assets/images/logo/favicon.svg"
+      type="image/svg+xml"
+    />
+    <!-- BACK-TO-TOP-CSS -->
+    <link rel="stylesheet" href="assets/css/back-top/back-top.css" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- BOOTSTRAP-CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css" />
+    <!-- CUSTOM-CSS -->
+    <link rel="stylesheet" href="scss/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>One-Ecommerce</title>
-  <!-- FAVICON-ICON -->
-  <link rel="shortcut icon" href="assets/images/logo/favicon.svg" type="image/svg+xml" />
-  <!-- BACK-TO-TOP-CSS -->
-  <link rel="stylesheet" href="assets/css/back-top/back-top.css" />
-  <!-- Link Swiper's CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <!-- BOOTSTRAP-CSS -->
-  <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css" />
-  <!-- CUSTOM-CSS -->
-  <link rel="stylesheet" href="assets/css/style.css" />
-</head>
-
-<body>
-  <!-- PRELOADER-START -->
-  <div class="preloader" id="preloader">
-    <div class="loader">
-      <div class="loader-7"></div>
+  <body>
+    <!-- PRELOADER-START -->
+    <div class="preloader" id="preloader">
+      <div class="loader">
+        <div class="loader-7"></div>
+      </div>
     </div>
-  </div>
-  <!-- PRELOADER-END -->
+    <!-- PRELOADER-END -->
 
-  <!-- HEADER-SECTION-START -->
-   <header>
-    <nav>
-      <a href="">
-        <h1>Biccas</h1>
-      </a>
-      <div>
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">Product</a></li>
-          <li><a href="">FAQ</a></li>
-          <li><a href="">Blog</a></li>
-          <li><a href="">About Us</a></li>
-        </ul>
-        <div>
-          <button>Login</button>
-          <button>Sign Up</button>
+    <!-- HEADER-SECTION-START -->
+    <header class="header">
+      <nav class="nav">
+        <a href="" class="nav__logo">
+          <h1 class="nav__logo-text">Biccas</h1>
+        </a>
+
+        <div class="nav__container">
+          <ul class="nav__menu">
+            <li class="nav__item">
+              <a href="" class="nav__link link_main">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__link">Product</a>
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__link">FAQ</a>
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__link">Blog</a>
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__link">About Us</a>
+            </li>
+          </ul>
+
+          <div class="nav__actions">
+            <button class="nav__button nav__button--login">Login</button>
+            <button class="nav__button nav__button--signup">Sign Up</button>
+          </div>
+
+          <div class="nav__mobile-toggle">
+            <img src="src/hamburger.png" alt="Menu" class="nav__hamburger" />
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Banner start -->
+    <section class="banner">
+  <div class="container  banner__container mt-3">
+    <div class="row ">
+
+      <div class="banner__content   d-sm-flex flex-sm-column align-items-sm-center align-items-xl-start  col-xs-12 col-lg-6">
+        <h1 class="banner__title text-xl-start text-center">We’re here to Increase your Productivity</h1>
+        <div class="banner__element mt-3 ">
+          <img src="src/element.png" alt="decoration element">
+        </div>
+        <p class="banner__description px-2 text-xl-start text-center mt-3">Let's make your work more organize and easily using the Taskio Dashboard with many of the latest featuresin managing work every day.</p>
+        <div class="banner__actions mt-3 d-flex justify-content-around gap-sm-4 align-items-xl-center">
+          <button class="banner__button banner__button--primary">Try free trial</button>
+          <div class="banner__demo">
+            <img src="src/playicon.svg" alt="play icon">
+            <span class="banner__demo-text">View Demo</span>
+          </div>
         </div>
       </div>
-    </nav>
-   </header>
+      <div class="banner__visual mt-4   position-relative col-xs-12 col-lg-6  ">
+        <img class="banner__main-image" src="src/bannermain.png" alt="main banner">
+        <img class="banner__card position-absolute" src="src/card.png" alt="card">
+        <img class="banner__dolar position-absolute" src="src/dolar.png" alt="dolar">
+        <img class="banner__icon position-absolute" src="src/icon.png" alt="icon">
+        <img class="banner__icon--secondary position-absolute" src="src/icon2.png" alt="secondary icon">
+        <img class="banner__vector position-absolute" src="src/Vector 25.png" alt="vector">
+      </div>
+    </div>
+  </div>
+</section>
+    <!-- Banner end -->
 
-  <!-- HEADER-SECTION-END -->
+    <!-- small section start -->
 
-  <!-- SHOWCASE-START -->
+    <section class="clients-section">
+      <div class="container">
+        <h2 class="clients-title text-center">
+          More than 25,000 teams use Collabs
+        </h2>
+        <div
+          class="clients-logos d-flex flex-lg-row mt-lg-5 flex-column justify-content-center align-items-center gap-3"
+        >
+          <div class="client-logo">
+            <img src="src/icon1.svg" alt="Client logo 1" />
+          </div>
+          <div class="client-logo">
+            <img src="src/icon2.svg" alt="Client logo 2" />
+          </div>
+          <div class="client-logo">
+            <img src="src/icon3.svg" alt="Client logo 3" />
+          </div>
+          <div class="client-logo">
+            <img src="src/icon4.svg" alt="Client logo 4" />
+          </div>
+          <div class="client-logo">
+            <img src="src/icon5.svg" alt="Client logo 5" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- small section end -->
 
-  <!-- SHOWCASE-END -->
+    <!-- support section start -->
+    <section class="support-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-6">
+            <div class="support-content">
+              <h2 class="support-title text-center text-lg-start">
+                How we support our pratner all over the world
+              </h2>
+              <p class="support-description text-center text-lg-start">
+                SaaS become a common delivery model for many business
+                application, including office software, messaging software,
+                payroll processing software, DBMS software, management software
+              </p>
+              <div
+                class="rating-cards d-flex justify-content-between justify-content-lg-start gap-lg-5"
+              >
+                <div class="rating-card">
+                  <div class="stars my-3">
+                    <img src="src/star.png" alt="star" />
+                    <img src="src/star.png" alt="star" />
+                    <img src="src/star.png" alt="star" />
+                    <img src="src/star.png" alt="star" />
+                    <img src="src/star.png" alt="star" />
+                  </div>
+                  <h2 class="rating-score my-3">
+                    4.9 / <span class="rating-text">5 rating</span>
+                  </h2>
+                  <h4 class="company-name">databricks</h4>
+                </div>
+                <div class="rating-card ">
+                  <div class="stars my-3">
+                    <img src="src/star.png" alt="star" />
+                    <img src="src/star.png" alt="star" />
+                    <img src="src/star.png" alt="star" />
+                    <img src="src/star.png" alt="star" />
+                    <img src="src/whitestar.png" alt="star" />
+                  </div>
+                  <h2 class="rating-score my-3">
+                    4.9 / <span class="rating-text">5 rating</span>
+                  </h2>
+                  <h4 class="company-name my-3">Chainalysis</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <div class="feature-items">
+              <div class="feature-item d-flex gap-3">
+                <div class="feature-icon d-flex justify-content-center align-items-center">
+                  <img src="src/activity 1.png" alt="Publishing" />
+                </div>
+                <div class="feature-content">
+                  <h2 class="feature-title">Publishing</h2>
+                  <p class="feature-description">
+                    Plan, collaborate, and publishing your contetn that drivees
+                    meaningful engagement and growth for your barnd
+                  </p>
+                </div>
+              </div>
+              <div class="feature-item d-flex gap-3">
+                <div class="feature-icon  d-flex justify-content-center align-items-center">
+                  <img src="src/supporticon2.png" alt="Analytics" />
+                </div>
+                <div class="feature-content">
+                  <h2 class="feature-title">Analytics</h2>
+                  <p class="feature-description">
+                    Analyze your performance and create goegeous report
+                  </p>
+                </div>
+              </div>
+              <div class="feature-item d-flex gap-3">
+                <div class="feature-icon  d-flex justify-content-center align-items-center">
+                  <img src="src/supporticon1.png" alt="Engagement" />
+                </div>
+                <div class="feature-content">
+                  <h2 class="feature-title">Engagement</h2>
+                  <p class="feature-description">
+                    Quiuckly navigate you anda engage with your adience
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- support section end -->
 
-  <!-- OUR-SERVICES-START -->
+    <!-- feature section start -->
+    <section class="features-section">
+      <div class="container">
+        <div class="row gap-3 gap-xl-0 d-xl-flex justify-content-xl-between">
+          <div class="col-12 title-custom col-xl-4">
+            <h2 class="features-title text-center text-xl-start">
+              Our Features you cab get
+            </h2>
+          </div>
+          <div class="col-12 subtitle col-xl-4">
+            <p class="features-subtitle text-center text-xl-start">
+              We offer a variety of interesting features that you can help
+              increase yor productivity at work and manage your projrct esaly
+            </p>
+          </div>
+          <div
+            class="col-12 d-flex button-container justify-content-center col-xl-4 justify-content-xl-end align-items-xl-center"
+          >
+            <button class="features-cta">Get Started</button>
+          </div>
+        </div>
 
-  <!-- OUR-SERVICES-END -->
+        <div class="row mt-3 d-xl-flex justify-content-xl-between p-0">
+          <div class="col-12 col-lg-4 p-0">
+            <div
+              class="feature-card gap-3 d-flex flex-column align-items-center align-items-xl-start"
+            >
+              <div class="feature-icon">
+                <img src="src/featureimg1.png" alt="Collboration Teams" />
+              </div>
+              <h2 class="feature-card-title text-center text-xl-start">
+                Collboration Teams
+              </h2>
+              <p class="feature-card-description text-center text-xl-start">
+                Here you can handle projects together with team virtually
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 p-0">
+            <div
+              class="feature-card gap-3 d-flex flex-column align-items-center align-items-xl-start"
+            >
+              <div class="feature-icon">
+                <img src="src/featureimg2.png" alt="Cloud Storage" />
+              </div>
+              <h2 class="feature-card-title text-center text-xl-start">
+                Cloud Storage
+              </h2>
+              <p class="feature-card-description text-center text-xl-start">
+                No nedd to worry about storage because we provide storage up to
+                2 TB
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 p-0">
+            <div
+              class="feature-card gap-3 d-flex flex-column align-items-center align-items-xl-start"
+            >
+              <div class="feature-icon">
+                <img src="src/featureimg3.png" alt="Daily Analytics" />
+              </div>
+              <h2 class="feature-card-title text-xl-start">Daily Analytics</h2>
+              <p class="feature-card-description text-center text-xl-start">
+                We always provide useful informatin to make it easier for you
+                every day
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- feature section end -->
 
-  <!-- PROFOUND-MISSION-START -->
+    <!-- benefit section start -->
+    <section class="benefits-section">
+      <div class="container">
+        <div class="row d-xl-flex flex-md-row  d-sm-flex flex-sm-column align-items-sm-center flex-xl-row justify-content-xl-between ">
+          <div class="col-12 col-lg-6 col-xl-6 ">
+            <div class="benefits-content">
+              <h2 class="benefits-title text-center text-xl-start">
+                What Benifit Will You Get
+              </h2>
+              <div class="benefits-list-container">
+                <ul class="benefits-list d-flex flex-column align-content-center gap-3 justify-content-center">
+                  <li class="benefit-item ">
+                    <img
+                      class="benefit-icon"
+                      src="src/Subtract.png"
+                      alt="Free Consulting"
+                    />
+                    <span class="benefit-text"
+                      >Free Consulting With Experet Saving Money</span
+                    >
+                  </li>
+                  <li class="benefit-item">
+                    <img
+                      class="benefit-icon"
+                      src="src/Subtract.png"
+                      alt="Online Banking"
+                    />
+                    <span class="benefit-text">Online Banking</span>
+                  </li>
+                  <li class="benefit-item">
+                    <img
+                      class="benefit-icon"
+                      src="src/Subtract.png"
+                      alt="Investment Report"
+                    />
+                    <span class="benefit-text"
+                      >Investment Report Every Month</span
+                    >
+                  </li>
+                  <li class="benefit-item">
+                    <img
+                      class="benefit-icon"
+                      src="src/Subtract.png"
+                      alt="Saving Money"
+                    />
+                    <span class="benefit-text"
+                      >Saving Money For The Future</span
+                    >
+                  </li>
+                  <li class="benefit-item">
+                    <img
+                      class="benefit-icon"
+                      src="src/Subtract.png"
+                      alt="Online Transaction"
+                    />
+                    <span class="benefit-text">Online Transection</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-lg-6 col-xl-6  d-flex  justify-content-center align-items-center">
+            <div class="benefits-visual position-relative">
+              <img class="main-image" src="src/leptop.png" alt="Laptop" />
+              <img
+                class="floating-element icon1"
+                src="src/benifit1.png"
+                alt="Benefit 1"
+              />
+              <img
+                class="floating-element icon2"
+                src="src/benifit2.png"
+                alt="Benefit 2"
+              />
+              <img
+                class="floating-element icon3"
+                src="src/benefit3.png"
+                alt="Benefit 3"
+              />
+              <img
+                class="floating-element icon4"
+                src="src/benefit4.png"
+                alt="Benefit 4"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- benefit end -->
 
-  <!-- PROFOUND-MISSION-END -->
+    <!-- plan section start -->
+    <section class="plans-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div
+              class="plans-header d-flex flex-column align-items-center gap-3"
+            >
+              <h2 class="plans-title text-center">
+                Choose Plan That's Right For You
+              </h2>
+              <p class="plans-subtitle text-center">
+                Choose plan that works best for you, feel free to contact us
+              </p>
+              <div
+                class="billing-toggle d-flex justify-content-between justify-content-xl-center  align-items-center"
+              >
+                <div
+                  class="billing-option1 d-flex justify-content-center align-items-center"
+                >
+                  Bil Monthly
+                </div>
+                <div
+                  class="billing-option2 d-flex justify-content-center align-items-center"
+                >
+                  Bil Yearly
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-  <!-- HEALTH-PACKAGE-START -->
+        <div class="row gap-lg-0 gap-3 gap-xl-0">
+          <div class="col-12 p-xl-0 col-lg-4 d-flex flex-column align-items-center justify-content-center">
+            <div class="pricing-card">
+              <div class="card-header">
+                <h2 class="plan-name">Free</h2>
+                <p class="plan-description">
+                  Have a go and test your superpowers
+                </p>
+                <div class="price-container position-relative">
+                  <h2 class="price-amount">0</h2>
+                  <h2 class="price-currency position-absolute">$</h2>
+                </div>
+              </div>
+              <div class="card-body">
+                <ul class="features-list">
+                  <li class="feature-item">
+                    <img
+                      class="feature-icon"
+                      src="src/Subtract.png"
+                      alt="2 Users"
+                    />2 Users
+                  </li>
+                  <li class="feature-item">
+                    <img
+                      class="feature-icon"
+                      src="src/Subtract.png"
+                      alt="2 Files"
+                    />2 Files
+                  </li>
+                  <li class="feature-item">
+                    <img
+                      class="feature-icon"
+                      src="src/Subtract.png"
+                      alt="Public Share"
+                    />Public Share & Comments
+                  </li>
+                  <li class="feature-item">
+                    <img
+                      class="feature-icon"
+                      src="src/Subtract.png"
+                      alt="Chat Support"
+                    />Chat Support
+                  </li>
+                  <li class="feature-item">
+                    <img
+                      class="feature-icon"
+                      src="src/Subtract.png"
+                      alt="New Apps"
+                    />New income apps
+                  </li>
+                </ul>
+                <div class="text-center">
 
-  <!-- HEALTH-PACKAGE-END -->
+                  <button class="cta-button">Signup for free</button>
+                </div>
+              </div>
+            </div>
+          </div>
 
-  <!-- AUTO-SLIDER-START -->
+          <div class="col-12 p-xl-0  col-lg-4 d-flex flex-column align-items-center justify-content-center">
+            <div class="pricing-card main-card">
+              <div class="card-header">
+                <h2 class="plan-name">Pro</h2>
+                <p class="plan-description">
+                  Experiment the power of infinite possibilities
+                </p>
+                <div class="price-container position-relative">
+                  <h2 class="price-amount">8</h2>
+                  <h2 class="price-currency position-absolute">$</h2>
+                </div>
+                <div class=" text-center">
+                  <button class="savings-badge">Save $50 a year</button>
+                </div>
+              </div>
+              <div class="card-body">
+                <ul class="features-list">
+                  <li class="feature-item">
+                    <img
+                      class="feature-icon"
+                      src="src/Subtract.png"
+                      alt="2 Users"
+                    />2 Users
+                  </li>
+                  <li class="feature-item">
+                    <img
+                      class="feature-icon"
+                      src="src/Subtract.png"
+                      alt="2 Files"
+                    />2 Files
+                  </li>
+                  <li class="feature-item">
+                    <img
+                      class="feature-icon"
+                      src="src/Subtract.png"
+                      alt="Public Share"
+                    />Public Share & Comments
+                  </li>
+                  <li class="feature-item">
+                    <img
+                      class="feature-icon"
+                      src="src/Subtract.png"
+                      alt="Chat Support"
+                    />Chat Support
+                  </li>
+                  <li class="feature-item">
+                    <img
+                      class="feature-icon"
+                      src="src/Subtract.png"
+                      alt="New Apps"
+                    />New income apps
+                  </li>
+                </ul>
+                <div class="text-center">
 
-  <!-- AUTO-SLIDER-END -->
+                  <button class="cta-button main-btn">Go to pro</button>
+                </div>
+              </div>
+            </div>
+          </div>
 
-  <!-- MAIN-SECTION-START -->
+          <div class="col-12 col-lg-4 d-flex flex-column align-items-center justify-content-center">
+            <div class="pricing-card">
+              <div class="card-header">
+                <h2 class="plan-name">Business</h2>
+                <p class="plan-description">
+                  Unveil new superpowers and join the Design League
+                </p>
+                <div class="price-container position-relative">
+                  <h2 class="price-amount">16</h2>
+                  <h2 class="price-currency position-absolute">$</h2>
+                </div>
+              </div>
+              <div class="card-body">
+                <ul class="features-list">
+                  <li class="feature-item">
+                    <img
+                      class="feature-icon"
+                      src="src/Subtract.png"
+                      alt="Pro Features"
+                    />All the features of pro plan
+                  </li>
+                  <li class="feature-item">
+                    <img
+                      class="feature-icon"
+                      src="src/Subtract.png"
+                      alt="Account Manager"
+                    />Account success Manager
+                  </li>
+                  <li class="feature-item">
+                    <img
+                      class="feature-icon"
+                      src="src/Subtract.png"
+                      alt="SSO"
+                    />Single Sign-On (SSO)
+                  </li>
+                  <li class="feature-item">
+                    <img
+                      class="feature-icon"
+                      src="src/Subtract.png"
+                      alt="Co-conception"
+                    />Co-conception program
+                  </li>
+                  <li class="feature-item">
+                    <img
+                      class="feature-icon"
+                      src="src/Subtract.png"
+                      alt="Collaboration"
+                    />Collaboration-Soon
+                  </li>
+                </ul>
+                <div class="text-center">
 
-  <!-- MAIN-SECTION-END -->
+                  <button class="cta-button">Goto Business</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- plan section end -->
 
-  <!-- REVIEWS-SECTION-START -->
+    <!-- footer start  -->
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__left-column">
+          <div class="footer__testimonial p-2">
+            <h2 class="footer__testimonial-title text-center text-xl-start">
+              People are Saying About DoWith
+            </h2>
+            <p
+              class="footer__testimonial-description text-center text-xl-start"
+            >
+              Everything you need to accept payments and grow your money or
+              manage anywhere on the planet
+            </p>
+            <div class="footer__testimonial-image">
+              <img src="src/footer5.png" alt="Testimonial image" />
+            </div>
+            <p class="footer__testimonial-quote text-center text-xl-start">
+              I am very helped by this E-wallet application, my days are very
+              easy to use this application and it's very helpful in my life,
+              even I can pay in a short time 😍
+            </p>
+            <p class="footer__testimonial-author text-xl-start">
+              _ Aria Zinanrio
+            </p>
+            <div class="footer__testimonial-icons">
+              <img src="src/footericon1.png" alt="Rating icon 1" />
+              <img src="src/footericon2.png" alt="Rating icon 2" />
+              <img src="src/footericon3.png" alt="Rating icon 3" />
+              <img src="src/footericon4.png" alt="Rating icon 4" />
+              <img src="src/footericon5.png" alt="Rating icon 5" />
+            </div>
+          </div>
+          <div class="footer__subscription p-2">
+            <h2 class="footer__subscription-title mt-2">Biccas</h2>
+            <p class="footer__subscription-description">
+              Get started now, try our product
+            </p>
+            <div class="footer__subscription-form">
+              <input
+                type="text"
+                placeholder="Enter your email here"
+                aria-label="Subscribe to newsletter"
+              />
+              <div class="footer__subscription-submit">
+                <img src="src/right-arrow.png" alt="Submit arrow icon" />
+              </div>
+            </div>
+          </div>
+          <div class="footer__copyright">
+            <p>© 2022 Biccas Inc. Copyright and rights reserved</p>
+          </div>
+        </div>
 
-  <!-- REVIEWS-SECTION-END -->
+        <div class="footer__right-column p-2">
+          <div class="footer__form">
+            <div class="footer__form-container">
+              <div class="footer__form-header">
+                <img src="src/coin.png" alt="Get Started icon" />
+                <h2 class="footer__form-title">Get Started</h2>
+              </div>
+              <div class="d-flex flex-column align-items-center gap-3">
+                <div class="footer__form-email">
+                  <label class="footer__form-label">Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email"
+                  />
+                </div>
+                <div class="footer__form-message">
+                  <label class="footer__form-label">Message</label>
+                  <input
+                    type="text"
+                    id="message"
+                    name="message"
+                    placeholder="What are you saying?"
+                  />
+                </div>
+                <div class="footer__form-actions">
+                  <button class="footer__form-button">Request Demo</button>
+                  <p class="footer__form-alternative">or Start Free Trial</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="footer__support d-md-flex flex-md-row justify-content-md-evenly justify-content-xl-between"
+          >
+            <div class="footer__support-column d-flex flex-column gap-3">
+              <h2 class="footer__support-title">Support</h2>
+              <ul class="footer__support-list">
+                <li class="footer__support-item">Help centre</li>
+                <li class="footer__support-item">Account information</li>
+                <li class="footer__support-item">About</li>
+                <li class="footer__support-item">Contact us</li>
+              </ul>
+            </div>
+            <div class="footer__support-column d-flex flex-column gap-3">
+              <h2 class="footer__support-title">Help and Solution</h2>
+              <ul class="footer__support-list">
+                <li class="footer__support-item">Talk to support</li>
+                <li class="footer__support-item">Support docs</li>
+                <li class="footer__support-item">System status</li>
+                <li class="footer__support-item">Covid response</li>
+              </ul>
+            </div>
+            <div class="footer__support-column d-flex flex-column gap-3">
+              <h2 class="footer__support-title">Product</h2>
+              <ul class="footer__support-list">
+                <li class="footer__support-item">Product</li>
+                <li class="footer__support-item">Security</li>
+                <li class="footer__support-item">Beta test</li>
+                <li class="footer__support-item">Pricing product</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
-  <!-- WHAT-LIKE-START -->
+    <!-- footer end  -->
 
-  <!-- WHAT-LIKE-END -->
+    <!-- HEADER-SECTION-END -->
 
-  <!-- FOOTER-SECTION-START -->
+    <!-- SHOWCASE-START -->
 
-  <!-- FOOTER-SECTION-END -->
+    <!-- SHOWCASE-END -->
 
-  <!-- PRELOADER-JS -->
-  <script src="assets/js/loader/loader.js"></script>
-  <!-- BOOTSTRAP-JS -->
-  <script src="assets/js/bootstrap/bootstrap.bundle.min.js"></script>
-  <!-- BACK-TO-TOP-JS -->
-  <script src="assets/js/back-top/back-top.js"></script>
-  <script src="assets/js/back-top/backtotop.js"></script>
-  <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <!-- Main Js -->
-  <script src="./assets/js/main.js"></script>
-</body>
+    <!-- OUR-SERVICES-START -->
 
+    <!-- OUR-SERVICES-END -->
+
+    <!-- PROFOUND-MISSION-START -->
+
+    <!-- PROFOUND-MISSION-END -->
+
+    <!-- HEALTH-PACKAGE-START -->
+
+    <!-- HEALTH-PACKAGE-END -->
+
+    <!-- AUTO-SLIDER-START -->
+
+    <!-- AUTO-SLIDER-END -->
+
+    <!-- MAIN-SECTION-START -->
+
+    <!-- MAIN-SECTION-END -->
+
+    <!-- REVIEWS-SECTION-START -->
+
+    <!-- REVIEWS-SECTION-END -->
+
+    <!-- WHAT-LIKE-START -->
+
+    <!-- WHAT-LIKE-END -->
+
+    <!-- FOOTER-SECTION-START -->
+
+    <!-- FOOTER-SECTION-END -->
+
+    <!-- PRELOADER-JS -->
+    <script src="assets/js/loader/loader.js"></script>
+    <!-- BOOTSTRAP-JS -->
+    <script src="assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <!-- BACK-TO-TOP-JS -->
+    <script src="assets/js/back-top/back-top.js"></script>
+    <script src="assets/js/back-top/backtotop.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Main Js -->
+    <script src="./assets/js/main.js"></script>
+  </body>
 </html>

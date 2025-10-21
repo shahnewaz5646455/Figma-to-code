@@ -1,0 +1,286 @@
+@use "../scss/global/index" as *;
+@use "../scss/partials/index" as *;
+@use "../scss/partials/index" as *;
+
+// Plans Section
+.plans-section {
+  padding: size(60) 0;
+  .container {
+    @include breakpoint(desktop1200) {
+      max-width: size(1180);
+      padding: size(130) 0;
+    }
+    .row {
+      &:first-child {
+        // Header row
+        .plans-header {
+          // Header container
+          .plans-title {
+            font-family: Inter;
+            font-weight: 700;
+
+            font-style: Bold;
+            font-size: size(40);
+            line-height: size(50);
+            letter-spacing: 0%;
+            text-align: center;
+            @include breakpoint(desktop1200) {
+              font-family: Inter;
+              font-weight: 700;
+              font-style: Bold;
+              font-size: 50px;
+              leading-trim: NONE;
+              line-height: 73px;
+              letter-spacing: 0%;
+              text-align: center;
+
+              width: size(492);
+            }
+
+            // Main title
+          }
+
+          .plans-subtitle {
+            font-family: Inter;
+            font-weight: 700;
+            font-style: Bold;
+            font-size: 18px;
+            color: #a6a6a6;
+            line-height: 100%;
+            letter-spacing: 0%;
+            text-align: center;
+
+            // Subtitle
+          }
+
+          .billing-toggle {
+            border-radius: size(10);
+            box-shadow: 0 4px 9px 0 #0000000d;
+            width: size(340);
+            height: size(70);
+            font-weight: 500;
+            font-style: Medium;
+            font-size: 18px;
+            padding: size(7);
+            line-height: 30px;
+            letter-spacing: 0%;
+
+            @include breakpoint(desktop1200) {
+              gap: size(38);
+            }
+            // Billing toggle container
+            .billing-option1 {
+              // Individual billing option
+              font-family: Inter;
+            }
+            .billing-option2 {
+              width: size(160);
+              height: size(56);
+              border-radius: size(10);
+              background: #54bd95;
+              color: white;
+              // Individual billing option
+            }
+          }
+        }
+      }
+
+      &:last-child {
+        margin-top: size(30);
+        // Pricing cards row
+        .pricing-card {
+          // Individual pricing card
+          box-shadow: 0 4px 9px 0 #0000000d;
+          background: white;
+          width: size(374);
+
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          border-radius: 20px;
+          @include breakpoint(tab992) {
+            width: size(300);
+          }
+          @include breakpoint(desktop1200) {
+            max-width: size(357) !important;
+            width: 100%;
+            height: size(644);
+            padding: 0;
+            margin: 0;
+          }
+          .card-header {
+            // Card header section
+            margin-top: size(30);
+            @include breakpoint(desktop1200) {
+              margin-top: size(40);
+              width: size(210);
+              height: size(251);
+            }
+            .plan-name {
+              font-family: Inter;
+              font-weight: 600;
+              font-style: Semi Bold;
+              font-size: 30px;
+              line-height: 100%;
+              letter-spacing: 0%;
+              text-align: center;
+
+              // Plan name
+            }
+
+            .plan-description {
+              font-family: Inter;
+              font-weight: 500;
+              font-style: Medium;
+              font-size: 18px;
+              color: #a6a6a6;
+              line-height: 27px;
+              letter-spacing: 0%;
+              text-align: center;
+            }
+
+            .price-container {
+              // Price container
+              .price-amount {
+                // Price amount
+                font-family: Inter;
+                margin-top: size(50);
+                text-align: center;
+                font-weight: 600;
+                font-style: Semi Bold;
+                font-size: 50px;
+                line-height: 30px;
+                letter-spacing: 0%;
+              }
+
+              .price-currency {
+                font-family: Inter;
+                font-weight: 500;
+                font-style: Medium;
+                font-size: 18px;
+                color: #a6a6a6;
+                line-height: 30px;
+                top: size(-30);
+                left: 40%;
+
+                letter-spacing: 0%;
+              }
+            }
+          }
+
+          .card-body {
+            margin-bottom: 30px;
+            background: #f9fafb;
+            padding: 10px;
+            border-radius: size(10);
+            @include breakpoint(desktop1200) {
+              width: size(334);
+              height: size(380);
+            }
+
+            .features-list {
+              padding: 0;
+              margin: size(16) 0;
+              list-style: none;
+              display: flex;
+              flex-direction: column;
+              gap: size(22);
+              @include breakpoint(desktop1200) {
+              }
+              // Features list
+              .feature-item {
+                font-family: Inter;
+                font-weight: 500;
+                font-style: Medium;
+                font-size: 18px;
+                color: #191a15;
+                line-height: 30px;
+                letter-spacing: 0%;
+
+                // Individual feature
+                display: flex;
+                gap: size(10);
+                align-items: center;
+                .feature-icon {
+                  // Feature icon
+                  width: size(26);
+                }
+
+                .feature-text {
+                  // Feature text
+                }
+              }
+            }
+
+            .cta-button {
+              width: size(260);
+              height: size(64);
+              font-family: Inter;
+              font-weight: 600;
+              font-style: Semi Bold;
+              font-size: 18px;
+              line-height: 30px;
+              letter-spacing: 0%;
+              border-radius: size(20);
+              background: white;
+              color: #54bd95;
+              border: none;
+              box-shadow: 0 4px 9px 0 #0000000d;
+              @include breakpoint(tab992) {
+                width: size(200);
+                height: size(64);
+              }
+            }
+          }
+        }
+
+        .main-card {
+          color: white;
+          background: #54bd95;
+          @include breakpoint(desktop1200) {
+            width: size(374);
+            height: size(684);
+          }
+          .card-header {
+            .plan-description {
+              color: white;
+            }
+            .price-container {
+              .price-currency {
+                color: white;
+              }
+            }
+          }
+          .savings-badge {
+            width: size(130);
+            height: size(40);
+            border-radius: size(10);
+            background: #85dab9;
+            color: white;
+            border: none;
+            font-family: Inter;
+            font-weight: 600;
+            font-style: Semi Bold;
+            font-size: 14px;
+            line-height: 30px;
+            letter-spacing: 0%;
+          }
+          .cta-button {
+            background: #54bd95;
+          }
+          .card-body {
+            background: white;
+            margin-top: size(10);
+
+            .main-btn {
+              background: #54bd95;
+              color: white;
+              box-shadow: 0 4px 9px 0 #0000000d;
+            }
+          }
+          // Highlighted/main card
+        }
+      }
+    }
+  }
+}
