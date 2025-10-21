@@ -1197,7 +1197,7 @@
 .plans-section .container .row:first-child .plans-header .billing-toggle {
   border-radius: 0.625rem;
   box-shadow: 0 4px 9px 0 rgba(0, 0, 0, 0.0509803922);
-  width: 21.25rem;
+  width: 18.75rem;
   height: 4.375rem;
   font-weight: 500;
   font-style: Medium;
@@ -1209,6 +1209,8 @@
 @media screen and (min-width: 75rem) {
   .plans-section .container .row:first-child .plans-header .billing-toggle {
     gap: 2.375rem;
+    width: 21.25rem;
+    height: 4.375rem;
   }
 }
 .plans-section .container .row:first-child .plans-header .billing-toggle .billing-option1 {
@@ -1227,7 +1229,7 @@
 .plans-section .container .row:last-child .pricing-card {
   box-shadow: 0 4px 9px 0 rgba(0, 0, 0, 0.0509803922);
   background: white;
-  width: 23.375rem;
+  width: 22.1875rem;
   display: flex;
   align-items: center;
   flex-direction: column;

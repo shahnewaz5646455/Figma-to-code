@@ -56,7 +56,7 @@
           .billing-toggle {
             border-radius: size(10);
             box-shadow: 0 4px 9px 0 #0000000d;
-            width: size(340);
+            width: size(300);
             height: size(70);
             font-weight: 500;
             font-style: Medium;
@@ -64,9 +64,12 @@
             padding: size(7);
             line-height: 30px;
             letter-spacing: 0%;
+            
 
             @include breakpoint(desktop1200) {
               gap: size(38);
+              width: size(340);
+            height: size(70);
             }
             // Billing toggle container
             .billing-option1 {
@@ -92,7 +95,7 @@
           // Individual pricing card
           box-shadow: 0 4px 9px 0 #0000000d;
           background: white;
-          width: size(374);
+          width: size(355);
 
           display: flex;
           align-items: center;
